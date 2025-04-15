@@ -103,7 +103,8 @@ foreach ($documents as $doc) {
 
             <div class="container p-5">
                 <h2 class="mt-4">Projects</h2>
-                <p>Here are some projects I've worked on (mostly in French). Click on the cards to view the documents.</p>
+                <p>Here are some projects I've worked on (mostly in French). Click on the cards to view the documents.
+                </p>
             </div>
 
             <?php foreach ($documents as $doc): ?>
@@ -129,7 +130,6 @@ foreach ($documents as $doc) {
                     </div>
                 </div>
 
-
                 <!-- Modal -->
                 <div class="modal fade" id="modal-<?= $doc['id'] ?>" tabindex="-1"
                     aria-labelledby="modalLabel-<?= $doc['id'] ?>" aria-hidden="true">
@@ -143,11 +143,36 @@ foreach ($documents as $doc) {
                                     aria-label="Fermer"></button>
                             </div>
                             <div class="modal-body" style="height: 80vh;">
-                                <embed src="<?= $doc['pdf'] ?>" type="application/pdf" width="100%" height="100%">
+                                <div id="pdf-container-<?= $doc['id'] ?>" style="width:100%; height:100%;">
+                                    Chargement du PDF...
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Script d’activation de PDFObject à l’ouverture de la modal -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const modals = document.querySelectorAll('.modal');
+                        modals.forEach(modal => {
+                            modal.addEventListener('shown.bs.modal', () => {
+                                const modalId = modal.id.replace('modal-', ''); // Extraire l'ID du document
+                                const pdfUrl = "<?= $doc['pdf'] ?>";
+                                const containerId = '#pdf-container-' + modalId;
+
+                                PDFObject.embed(pdfUrl, containerId, {
+                                    height: "100%",
+                                    fallbackLink: `<p>Ce navigateur ne peut pas afficher le PDF. <a href="${pdfUrl}" target="_blank">Cliquez ici pour le télécharger.</a></p>`
+                                });
+                            });
+                        });
+                    });
+                </script>
+
+
+
             <?php endforeach; ?>
         </div>
     </div>
