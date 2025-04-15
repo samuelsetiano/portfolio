@@ -1,0 +1,56 @@
+.card {
+  border: none;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7); // opacité 5%
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  &-title {
+    padding: 20px 0 15px 0;
+    font-weight: 500;
+
+
+  }
+
+  &-body {
+    padding: 0 20px 20px 20px;
+  }
+
+  &-img-overlay {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.card-title {
+  font-size: 1.4rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem; // Plus petit pour les écrans petits
+  }
+}
+
+.card-text {
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem; // Plus petit pour les écrans petits
+  }
+}
+
+.modal-title {
+  font-size: 1.75rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem; // Plus petit pour les écrans petits
+  }
+}
+
+.modal-body {
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem; // Plus petit pour les écrans petits
+  }
+}

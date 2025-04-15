@@ -1,0 +1,43 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$bg-light: #f1f1f1;
+$text-dark: #333;
+
+// Reset et styles globaux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Importations
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', sans-serif;
+  scroll-behavior: smooth;
+  background: $bg-light;
+  color: $text-dark;
+}
+
+
+
+// Contenu principal ajusté sur mobile
+@media (max-width: 768px) {
+  
+
+  body{
+    font-size: 10px;
+  }
+}
+
+@import 'sidebar';
+@import 'section';
+@import 'card';
+@import 'footer';
+

@@ -1,0 +1,29 @@
+.footer {
+    margin-left: 150px;
+
+    height: 60px;
+    padding: 20px 0;
+    font-size: 12px;
+    transition: all 0.3s;
+    background-color: #f8f9fa; // Optional: Add a light background color for better separation
+  
+    .copyright,
+    .credits {
+      text-align: center;
+      color: #333; // Dark text for better readability
+    }
+  
+    .credits {
+      padding-top: 5px;
+      font-size: 13px;
+    }
+  
+    @media (max-width: 768px) {
+      font-size: 8px; // Reduce font size for smaller screens
+      padding: 10px 0; // Adjust padding for smaller screens
+      margin-left: 0; // Remove left margin on mobile
+      height: 40px; // Adjust height for smaller screens
+    }
+
+  }
+  

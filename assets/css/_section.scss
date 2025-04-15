@@ -1,0 +1,122 @@
+.content {
+  margin-left: 200px; // Évite la superposition avec la sidebar
+  width: calc(100% - 200px);
+
+  .section {
+    min-height: 100vh;
+
+
+    // Styles spécifiques aux sections
+    &#accueil {
+
+      background: none !important;
+    }
+
+
+    &#projet {
+      background: darken($bg-light, 5%);
+    }
+
+    &#a-propos {
+      background: darken($bg-light, 10%);
+    }
+
+
+
+
+    &#contact {
+      background: darken($bg-light, 15%);
+    }
+
+    h1,
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+/* Ensure canvas fills the background */
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Place the canvas behind the card */
+}
+
+
+
+
+// Contenu principal ajusté sur mobile
+@media (max-width: 768px) {
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+
+    margin-top: 80px; // Évite la superposition avec la sidebar
+    height: calc(100% - 80px);
+
+
+  }
+
+  .section {
+    padding: 20px; // Optionnel : réduit le padding sur mobile pour plus d'espace
+  }
+}
+
+
+#contact {
+  padding: 2rem 1rem;
+
+  .container {
+
+    .row {
+      margin: 0;
+
+      .col-lg-8,
+      .col-lg-6 {
+        padding: 0;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button.btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contact {
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p.lead {
+      font-size: 0.9rem;
+    }
+
+    form {
+      .btn {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+    }
+  }
+}
