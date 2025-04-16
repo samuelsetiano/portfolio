@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <h2 class="fw-bold mb-4">Contact me</h2>
-                <p class="lead text-muted mb-5">Have a question or a project in mind? Send me a message.</p>
+                <p class="lead text-muted mb-5">Have a question or a projects in mind? Send me a message.</p>
             </div>
         </div>
 

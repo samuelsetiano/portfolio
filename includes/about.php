@@ -1,4 +1,4 @@
-<section class="section d-flex justify-content-center py-5" id="a-propos">
+<section class="section d-flex justify-content-center py-5" id="about">
     <div class="row justify-content-center">
         <div class="col-lg-8 d-flex flex-column flex-lg-row align-items-center">
 

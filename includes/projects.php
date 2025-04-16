@@ -95,7 +95,7 @@ foreach ($documents as $doc) {
 ?>
 
 
-<section class="section d-flex  align-items-center justify-content-center p-5" id="projet">
+<section class="section d-flex  align-items-center justify-content-center p-5" id="projects">
 
     <div class="row justify-content-center">
 
@@ -130,9 +130,13 @@ foreach ($documents as $doc) {
                     </div>
                 </div>
 
+
                 <!-- Modal -->
                 <div class="modal fade" id="modal-<?= $doc['id'] ?>" tabindex="-1"
-                    aria-labelledby="modalLabel-<?= $doc['id'] ?>" aria-hidden="true">
+                    aria-labelledby="modalLabel-<?= $doc['id'] ?>" aria-hidden="true" data-pdf="<?= $doc['pdf'] ?>">
+
+
+
                     <div class="modal-dialog modal-xl modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -151,15 +155,13 @@ foreach ($documents as $doc) {
                     </div>
                 </div>
 
-
-                <!-- Script d’activation de PDFObject à l’ouverture de la modal -->
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         const modals = document.querySelectorAll('.modal');
                         modals.forEach(modal => {
                             modal.addEventListener('shown.bs.modal', () => {
-                                const modalId = modal.id.replace('modal-', ''); // Extraire l'ID du document
-                                const pdfUrl = "<?= $doc['pdf'] ?>";
+                                const pdfUrl = modal.getAttribute('data-pdf');
+                                const modalId = modal.id.replace('modal-', '');
                                 const containerId = '#pdf-container-' + modalId;
 
                                 PDFObject.embed(pdfUrl, containerId, {
@@ -170,8 +172,6 @@ foreach ($documents as $doc) {
                         });
                     });
                 </script>
-
-
 
             <?php endforeach; ?>
         </div>

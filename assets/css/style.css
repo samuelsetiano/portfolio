@@ -74,11 +74,11 @@ body {
   width: calc(100% - 200px); }
   .content .section {
     min-height: 100vh; }
-    .content .section#accueil {
+    .content .section#home {
       background: none !important; }
-    .content .section#projet {
+    .content .section#projects {
       background: #e4e4e4; }
-    .content .section#a-propos {
+    .content .section#about {
       background: #d8d8d8; }
     .content .section#contact {
       background: #cbcbcb; }

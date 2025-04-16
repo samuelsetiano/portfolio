@@ -10,9 +10,9 @@
 
     <main class="content">
         <?php 
-        include 'includes/accueil.php';
-        include 'includes/projet.php';
-        include 'includes/apropos.php';
+        include 'includes/home.php';
+        include 'includes/projects.php';
+        include 'includes/about.php';
         include 'includes/contact.php';
         ?>
     </main>

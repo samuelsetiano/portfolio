@@ -1,5 +1,5 @@
 <section class="container section d-flex justify-content-center align-items-center flex-column flex-md-row"
-    id="accueil">
+    id="home">
 
     <canvas id="canvas-container" class="mb-4 mb-md-0"></canvas>
 
