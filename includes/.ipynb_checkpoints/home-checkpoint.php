@@ -1,4 +1,3 @@
-
 <section class="container section d-flex justify-content-center align-items-center flex-column flex-md-row"
     id="home">
 

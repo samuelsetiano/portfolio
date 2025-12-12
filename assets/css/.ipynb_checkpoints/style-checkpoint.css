@@ -68,13 +68,13 @@
   /* Style propre pour tous les liens du contenu */
 }
 .content a {
-  color: #8da9c4;
+  color: #022f40;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 .content a:hover {
   text-decoration: underline;
-  color: rgb(107.3930635838, 143.6473988439, 178.6069364162);
+  color: rgb(3.5454545455, 83.3181818182, 113.4545454545);
 }
 .content .section {
   min-height: 100vh;
