@@ -19,16 +19,39 @@ Exemple de document à ajouter dans le tableau $documents :
 Rappel : la miniature sera générée automatiquement à l’emplacement indiqué dans 'thumb'
 si elle n’existe pas encore.
 */
+
+    [
+    'id' => 'stage2',
+    'title' => 'Molecular Analysis of mRNA Vaccine Architecture by Hyperpolarized Solid-State NMR',
+    'pdf' => 'assets/pdf/stage-crmn-setiano.pdf',
+    'auteur' => 'Samuel Setiano',
+    'thumb' => 'assets/img/stage-crmn-thumb.jpg',
+    'universite' => 'ENS Lyon',
+    'annee' => 'July 2026',
+    'description' => "This internship investigates the molecular organization of lipid nanoparticles (LNPs) used in mRNA-based therapeutics. It combines solid-state NMR spectroscopy with Dynamic Nuclear Polarization (DNP) to study LNP structure at the atomic scale, supported by numerical simulations of proton spin diffusion to assess proposed structural models."
+],
+
+       [
+    'id' => 'orbital_modelisation',
+    'title' => 'Numerical Modeling of Molecular Orbitals',
+    'pdf' => 'assets/pdf/projet-numerique-orbital-setiano.pdf',
+    'thumb' => 'assets/img/projet-numerique-orbital-thumb.jpg',
+    'auteur' => 'Samuel Setiano, Romain Saives',
+    'universite' => 'ENS Lyon',
+    'annee' => 'April 2026',
+    'description' => "This report present a Python-based implementation of molecular orbital models for small chemical systems (diatomic molecules and benzene). It focuses on the numerical solution of the Roothaan equations and a basic treatment of electron–electron repulsion, while discussing the approach and its limitations."
+],
+    
     
     [
-        'id' => 'stage',
+        'id' => 'stage1',
         'title' => "Description of Spin Polarization in Density Functional Theory from an Ensemble-Centered Perspective",
-        'pdf' => 'assets/pdf/rapport-stage-setiano.pdf',
+        'pdf' => 'assets/pdf/stage-lcqs-setiano.pdf',
         'thumb' => 'assets/img/stage-lcqs-thumb.jpg',
         'auteur' => 'Samuel Setiano',
         'universite' => 'University of Strasbourg',
         'annee' => 'July 2025',
-        'description' => "This internship explores spin polarization within ensemble DFT, providing a rigorous framework for fractional-occupation states and studying spin effects to guide the development of improved exchange-correlation functionals    "],
+        'description' => "This internship focused on spin polarization in ensemble DFT, studying fractional occupations and spin effects to help develop improved exchange-correlation functionals.   "],
     
     [
         'id' => 'biophotonics',
@@ -45,11 +68,11 @@ si elle n’existe pas encore.
         'id' => 'sociology-health',
         'title' => "Scurvy in an Isolated Elderly Patient: An Illustration of the Limits of a Strictly Medical Approach to Health",
         'pdf' => 'assets/pdf/sociologie-sante-samuel-setiano.pdf',
-        'thumb' => 'assets/img/ociologie-sante-thumb.jpg',
+        'thumb' => 'assets/img/sociologie-sante-thumb.jpg',
         'auteur' => 'Samuel Setiano',
         'universite' => 'University of Strasbourg',
         'annee' => 'January 2025',
-        'description' => "This paper analyzes a recent case of scurvy in an isolated patient, highlighting the limits of a purely biomedical approach. It shows how social health inequalities and the technologization of care can delay the diagnosis of preventable diseases, calling for greater consideration of social factors in medical practice."
+        'description' => "This work examines the limitations of a purely biomedical approach to medicine and highlights the importance of considering social and environmental factors in the diagnosis and prevention of disease."
     ],
 
     [
@@ -60,7 +83,7 @@ si elle n’existe pas encore.
         'auteur' => 'Samuel Setiano, Wilem Barbier, Esteban Heinkele',
         'universite' => 'University of Strasbourg',
         'annee' => 'January 2025',
-        'description' => "This report explores the evolution of French medicine from the late 18th to the 19th century. Through the analysis of texts by Cabanis, Fourcroy, Thouret, and Carret, it highlights the tensions between scientific progress and social justice. The aim is to understand how to balance growing medical demands with equitable access to care—an ongoing issue in the face of territorial and social inequalities."
+        'description' => "This report examines the evolution of French medicine from the late 18th to the 19th century, focusing on the relationship between medical progress, social justice, and access to healthcare. Through historical texts, it explores how medicine has sought to reconcile scientific advances with persistent social and territorial inequalities."
     ],
 
     [
@@ -82,7 +105,7 @@ si elle n’existe pas encore.
         'auteur' => 'Samuel Setiano',
         'universite' => 'University of Strasbourg',
         'annee' => 'January 2024',
-        'description' => "This report examines the human impacts of nuclear disasters (Chernobyl, Fukushima). Despite few direct deaths from radiation, the long-term social, psychological, and health consequences are significant."
+        'description' => "This work examines the human impacts of nuclear disasters (Chernobyl and Fukushima). Despite few direct deaths from radiation, the long-term social, psychological, and health consequences are significant."
     ],
 
     [
